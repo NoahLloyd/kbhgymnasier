@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Work+Sans:wght@600&display=swap");
+
+:root {
+  --main: #4227c7;
+  --main-accent: #301d8f;
+  --sec: #004966;
+  --black: #444;
+  --white: #FAFEFD;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+.title {
+  color: var(--main);
+  text-align: center;
+}
+h2 {
+  color: var(--black);
+  font-size: 2.2rem;
+}
+
+.gymnasier {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12% 10rem 12%;
+}
+.gym {
+  list-style: none;
+  margin-bottom: 0.7rem;
+}
+.gym--name {
+  font-size: 1.8rem;
+  letter-spacing: 1.35px;
+  color: var(--main);
+}
+.gym--name:hover {
+  color: var(--main-accent);
+  transition: color 200ms ease;
+}
+.gym--name > a {
+  text-decoration: none;
+  color: var(--sec);
+}
+.gym--name > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  transition: opacity 200ms ease;
+}
+.gym--explanation {
+  max-width: 25vw;
+  color: var(--black);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  /* border-bottom: 2px solid var(--black); */
+  padding-bottom: .6rem;
+}
+.grade {
+  color: var(--main);
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.grade::before {
+    content: "Eksamenskarakter: ";
+    color: var(--black);
+    font-weight: normal;
+    font-size: 1.4rem;
+
+}
+.fields::before {
+    content: "Studieretninger: ";
+    color: var(--black)
+;
+}
+.fields {
+  color: var(--sec);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.bar {
+    width: 100%;
+    background: linear-gradient(to left, var(--main), var(--main-accent));
+    border-radius: 3px;
+    height: .55rem;
+    margin-top: .4rem;
+}
+.hhx-htx {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+  background-color: var(--main);
+  width: 100%;
+  height: 10%;
+}
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.contact-btn {
+  padding: 0.6rem 2rem 0.6rem 2rem;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  background: linear-gradient(to left, var(--main), var(--main-accent));
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.ad {
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin-bottom: 10px;
+}
