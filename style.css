@@ -63,6 +63,7 @@ h2 {
 .gym--name:hover {
   color: var(--main-accent);
   transition: color 200ms ease;
+  cursor: pointer;
 }
 .gym--name > a {
   text-decoration: none;
